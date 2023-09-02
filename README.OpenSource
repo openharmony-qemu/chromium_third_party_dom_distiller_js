@@ -1,0 +1,10 @@
+[
+    {
+        "Name": "chromium_third_party_dom_distiller_js",                   # 上游开源软件名全称
+        "License":        # 上游开源软件中包含的许可证信息
+        "License File": "LICENSE.TXT"      # 许可证所在文件路径
+        "Version Number": "f339eb9463714c3d31657c8ee1bd53d1c7e5c555",
+        "Upstream URL": "https://chromium.googlesource.com/chromium/dom-distiller/dist.git@f339eb9463714c3d31657c8ee1bd53d1c7e5c555",   # 上游软件包发布地址
+        "Description": "第三方软件vulkan-deps/glslang"           # 开源软件功能描述
+    }
+]
