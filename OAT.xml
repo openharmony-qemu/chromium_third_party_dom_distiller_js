@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <oatconfig>
-        <licensefile>log/License.txt</licensefile>
         <policylist>
             <policy name="projectPolicy" desc="">
             </policy>
