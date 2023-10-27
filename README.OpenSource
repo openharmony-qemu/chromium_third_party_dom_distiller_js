@@ -1,10 +1,11 @@
 [
     {
-        "Name": "chromium:dist",                   # 上游开源软件名全称
-        "License":        # 上游开源软件中包含的许可证信息
-        "License File":      # 许可证所在文件路径
+        "Name": "chromium",
+        "License":"BSD-3-Clause",
+        "License File":"LICENSE",
         "Version Number": "f339eb9463714c3d31657c8ee1bd53d1c7e5c555",
-        "Upstream URL": "https://chromium.googlesource.com/chromium/dom-distiller/dist.git@f339eb9463714c3d31657c8ee1bd53d1c7e5c555",   # 上游软件包发布地址
-        "Description": "提取DOM"           # 开源软件功能描述
+        "Owner": "liujixin@huawei.com",
+        "Upstream URL": "https://chromium.googlesource.com/chromium/dom-distiller/dist.git@f339eb9463714c3d31657c8ee1bd53d1c7e5c555",
+        "Description": "提取DOM"
     }
 ]
