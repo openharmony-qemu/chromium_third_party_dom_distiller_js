@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "chromium",
+        "License":"BSD-3-Clause",
+        "License File":"LICENSE",
+        "Version Number": "f339eb9463714c3d31657c8ee1bd53d1c7e5c555",
+        "Owner": "liujixin@huawei.com",
+        "Upstream URL": "https://chromium.googlesource.com/chromium/dom-distiller/dist.git@f339eb9463714c3d31657c8ee1bd53d1c7e5c555",
+        "Description": "提取DOM"
+    }
+]
