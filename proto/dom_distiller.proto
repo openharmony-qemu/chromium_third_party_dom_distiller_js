@@ -50,7 +50,7 @@ message CatalogPaginationInfo {
   optional string prev_catalog_page = 2;
   // 查看完整目录页链接
   optional string whole_catalog_page = 3;
-  // 所有目录分页链接列表（支持目录页随机翻页）
+  // 所有目录分页链接列表(支持目录页随机翻页)
   repeated CatalogPageContent all_catalog_pages = 4;
 }
 
@@ -66,7 +66,7 @@ message ChapterContent {
 
 message CatalogPageInfo {
   optional ChapterContent chapter_list = 1;
-  optional ChapterPaginationInfo pagination_info = 2;
+  optional CatalogPaginationInfo pagination_info = 2;
 }
 
 message DistilledResult {
@@ -205,7 +205,7 @@ message DomDistillerOptions {
   // (3): (2) and extracted paging information
   // #ifdef ARKWEB_READER_MODE
   // (4): timing info
-  // (5): distill_info
+  // (5): distill info
   // #endif ARKWEB_READER_MODE
   optional int32 debug_level = 2;
 
