@@ -228,5 +228,7 @@ message DomDistillerOptions {
   optional XPathConfig xpath_config = 6;
 
   optional bool extract_no_image_media = 7;
+
+  optional string distill_ext_info = 9;
   // #endif ARKWEB_READER_MODE
 }
