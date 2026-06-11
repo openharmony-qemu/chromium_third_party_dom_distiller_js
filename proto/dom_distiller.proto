@@ -191,7 +191,55 @@ message DomDistillerResult {
   optional CatalogPageInfo catalog_info = 11;
   optional HwReadExtendFields flat_fields = 12;
   optional DistilledResult distilled_result = 13;
+  optional string hw_distiller_result_json = 14;
   // #endif ARKWEB_READER_MODE
+}
+
+message DomDistillerConfig {
+  optional string reserved = 1;
+}
+ 
+message MetaOptionsConfig {
+  optional bool is_dynamic_js_web_site = 1;
+  optional int32 dom_mutation_duration_ms = 2;
+  optional int32 dom_text_change_count = 3;
+  optional string reserved = 4;
+}
+ 
+message DistillMetaConfig {
+  optional string book_name = 1;
+  optional string chapter_name = 2;
+  optional string description = 3;
+  optional string image_url = 4;
+  optional string author = 5;
+  optional string content = 6;
+  optional string category = 7;
+  optional string last_chapter_name = 8;
+  optional string last_chapter_url = 9;
+  optional string start_read_link = 10;
+  optional string next_content_page = 11;
+  optional string prev_content_page = 12;
+  optional string current_catalog_page = 13;
+  optional string all_chapters = 14;
+  optional string latest_chapters = 15;
+  optional string next_catalog_page = 16;
+  optional string prev_catalog_page = 17;
+  optional string whole_catalog_page = 18;
+  optional string all_catalog_pages = 19;
+  optional string reserved = 20;
+}
+ 
+message DistillOptionsConfig {
+  optional DistillMetaConfig xpath_config = 1;
+  optional DistillMetaConfig javascript_config = 2;
+  optional string reserved = 3;
+}
+ 
+message HwCustomOptions {
+  optional int32 page_type = 1;
+  optional DomDistillerConfig dom_distiller_config = 2;
+  optional MetaOptionsConfig cust_meta_config = 3;
+  optional DistillOptionsConfig distill_config = 4;
 }
 
 message DomDistillerOptions {
@@ -228,5 +276,9 @@ message DomDistillerOptions {
   optional XPathConfig xpath_config = 6;
 
   optional bool extract_no_image_media = 7;
+
+  optional HwCustomOptions custom_options = 8;
+
+  optional string distill_ext_info = 9;
   // #endif ARKWEB_READER_MODE
 }
